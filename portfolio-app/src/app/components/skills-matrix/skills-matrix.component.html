@@ -1,0 +1,15 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div *ngFor="let skillGroup of skills" 
+       class="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300">
+    <h3 class="text-lg font-bold text-emerald-400 mb-4 flex items-center">
+      <span class="text-emerald-500 mr-2">▸</span>
+      {{ skillGroup.category }}
+    </h3>
+    <div class="flex flex-wrap gap-2">
+      <span *ngFor="let skill of skillGroup.skills" 
+            class="px-3 py-1.5 text-sm font-medium bg-midnight-200 text-slate-300 rounded border border-slate-600 hover:border-emerald-500/50 hover:text-emerald-400 transition-all">
+        {{ skill }}
+      </span>
+    </div>
+  </div>
+</div>
