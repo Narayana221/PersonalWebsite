@@ -1,11 +1,4 @@
 {
-  "version": 2,
-  "buildCommand": "npm install && npm run build",
-  "outputDirectory": "dist/portfolio-app/browser",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  "framework": "angular",
+  "outputDirectory": "dist/portfolio-app/browser"
 }
